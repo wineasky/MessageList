@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/list_item"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="68dp">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/img_mIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_weight="0.5"
+        android:baselineAlignBottom="true"
+        android:contentDescription="@string/img"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:id="@+id/messageinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_mTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txt_mMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/num_time"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:textColor="#999999"
+        android:format24Hour="HH:mm"
+        android:format12Hour="hh:mm"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_gravity="end"/>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:id="@+id/txt_num"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/num_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

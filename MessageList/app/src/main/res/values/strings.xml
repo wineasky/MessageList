@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Message List</string>
+    <string name="mbutton">切换为RecyclerView</string>
+    <string name="rbutton">切换为ListView</string>
+    <string name="img">图标</string>
+
+</resources>
